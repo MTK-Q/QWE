@@ -3,12 +3,12 @@
 _get_repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "SO-AN" ]]
+    if [[ $UPSTREAM_REPO == "LU-RA" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1lZLTIwMDUva25vdy9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
-    elif [[ $UPSTREAM_REPO == "SO-AN" ]]
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0REUi0yMDA1L0NEUi9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+    elif [[ $UPSTREAM_REPO == "LU-RA" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1lZLTIwMDUva25vdy9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0REUi0yMDA1L0NEUi9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -18,7 +18,7 @@ _get_repolink () {
             echo "${UPSTREAM_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1lZLTIwMDUva25vdy9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0REUi0yMDA1L0NEUi9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
     fi
 }
 
@@ -35,7 +35,7 @@ _setting_bot () {
     rm -rf "$zippath"
     sleep 5
     cd $CATPATH
-    echo "جـاري الاسـتراد لـسورس انتيثون   ..."
+    echo "جـاري الاسـتراد لـسورس لورا   ..."
     echo "1
     "
 
