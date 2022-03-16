@@ -3,12 +3,12 @@
 _get_repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "LU-RA" ]]
+    if [[ $UPSTREAM_REPO == "UU_TY" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0REUi0yMDA1L0NEUi9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
-    elif [[ $UPSTREAM_REPO == "LU-RA" ]]
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0REUi0yMDA1L1pYQy9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+    elif [[ $UPSTREAM_REPO == "UU_TY" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0REUi0yMDA1L0NEUi9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0REUi0yMDA1L1pYQy9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -18,7 +18,7 @@ _get_repolink () {
             echo "${UPSTREAM_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0REUi0yMDA1L0NEUi9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0REUi0yMDA1L1pYQy9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
     fi
 }
 
