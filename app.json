@@ -1,6 +1,6 @@
 {
-  "name": "MATRIX",
-  "description": "تنصيب لسورس ماتريكس  معرف قناتنا [[《MATRIX》](https://t.me/YY_VP)]",
+  "name": "LURA",
+  "description": "تنصيب لسورس لورا  معرف قناتنا [[《LURA》](https://t.me/YY_VP)]",
   "logo": "https://telegra.ph/file/fcfb7d70fb06b0c616005.jpg",
   "keywords": [    "plugin",    "modular",    "productivity"  ],
   "repository": "https://github.com/MTK-Q/QIEO/",
@@ -38,7 +38,7 @@
     },
     "UPSTREAM_REPO": {
       "description": "لاتـغيره! ",
-      "value": "SO-AN",
+      "value": "UU_TY",
       "required": false
     }
   },
